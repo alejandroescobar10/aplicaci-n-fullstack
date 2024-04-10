@@ -3,13 +3,19 @@
   "version": "1.0.0",
   "description": "��#\u0000 \u0000a\u0000p\u0000l\u0000i\u0000c\u0000a\u0000c\u0000i\u0000-\u0000n\u0000-\u0000f\u0000u\u0000l\u0000l\u0000s\u0000t\u0000a\u0000c\u0000k\u0000\r\u0000 \u0000",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "nodemon src/index.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.19.2"
+    "express": "^4.19.2",
+    "mongoose": "^8.3.1",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.0"
   }
 }

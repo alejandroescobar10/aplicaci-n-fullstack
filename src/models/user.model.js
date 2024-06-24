@@ -1,6 +1,6 @@
 import mongoose from 'mongoose';
 //trim es para borrar los espacios '      alejo     '
-const userSchema = mongoose.Schema({
+const userSchema = new mongoose.Schema({
     username:{
         type: String,
         required: true,
@@ -16,5 +16,8 @@ const userSchema = mongoose.Schema({
         type:String,
         required: true
     }
-})
+},{
+    timestamps:true
+}
+)
 export default mongoose.model('user',userSchema);

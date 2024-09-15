@@ -42,7 +42,7 @@ function LoginPage() {
         <p className="flex gap-x-2 justify-between">
           Don´t have an account?{" "}
           <Link to="/register" className="text-sky-500">
-            Login
+            Sign up
           </Link>
         </p>
       </div>

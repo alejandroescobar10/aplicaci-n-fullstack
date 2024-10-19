@@ -5,7 +5,7 @@ function Navbar() {
   console.log(user);
   return (
     <nav className="bg-zinc-700 my-3 flex justify-between py-5 px-10 rounded-lg">
-      <Link to="/">
+      <Link to={isAuthenticated ? "/tasks" : "/"}>
         <h1 className="text-2xl font-bold">Task manager</h1>
       </Link>
       <ul className="flex gap-x-2">
@@ -13,7 +13,12 @@ function Navbar() {
           <>
             <li>Welcome {user.username}</li>
             <li>
-              <Link to="/add-task">Add Task</Link>
+              <Link
+                to="/add-task"
+                className="bg-indigo-500 px-4 py-1 rounded-sm"
+              >
+                Add Task
+              </Link>
             </li>
             <li>
               <Link
